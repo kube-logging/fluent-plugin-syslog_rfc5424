@@ -62,7 +62,7 @@ module Fluent
         socket = find_socket(transport, host, port)
         return socket if socket
 
-        @sockets[socket_key(transport, host, port)] = socket_create(transport.to_sym, host, port, socket_options)
+        @sockets[socket_key(transport, host, port)] = socket_create(transport.to_sym, host, port, **socket_options)
       end
 
       def socket_options
