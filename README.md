@@ -4,7 +4,7 @@
 
 Formatter plugin adheres to [RFC5424](https://tools.ietf.org/html/rfc5424).
 
-Output plugin adheres to [RFC6587](https://tools.ietf.org/html/rfc6587) and [RFC5424](https://tools.ietf.org/html/rfc5424).
+Output plugin adheres to [RFC5424](https://tools.ietf.org/html/rfc5424) and [RFC6587](https://tools.ietf.org/html/rfc6587).
 
 ## Installation
 
@@ -52,7 +52,7 @@ Defaults to `syslog_rfc5424`
 
 | name                      |type     | description |
 | --------------            | ------- | -------     |
-| rfc6587_message_size      | boolean | prepends message length for syslog transmission (true by default)  |
+| rfc6587_message_size      | boolean | prepends message length for syslog transmission (`false` by default)  |
 | hostname_field            | string  | sets host name in syslog from field in fluentd, delimited by '.' (default hostname) |
 | app_name_field            | string  | sets app name in syslog from field in fluentd, delimited by '.' (default app_name) |
 | proc_id_field             | string  | sets proc id in syslog from field in fluentd, delimited by '.' (default proc_id) |
